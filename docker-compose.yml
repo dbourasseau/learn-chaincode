@@ -26,7 +26,7 @@ peer:
     - /var/run/docker.sock:/var/run/docker.sock
   # have the peer wait 10 sec for membersrvc to start
   #  the following is to run the peer in Developer mode - also set sample DEPLOY_MODE=dev
-  command: sh -c "sleep 10; peer node start --logging-level=debug --peer-chaincodedev"
-  #command: sh -c "sleep 10; peer node start"
+  command: sh -c "sleep 10; peer node start "
+  #command: sh -c "sleep 10; peer node start" #--logging-level=debug --peer-chaincodedev
   links:
     - membersrvc
